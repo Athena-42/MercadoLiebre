@@ -24,4 +24,4 @@ app.post('/crear',(req,res)=>{
     res.send("Recibí un formulario")
 })
 
-app.listen(3030, ()=> console.log("El servidor está corriendo"))
+app.listen(process.env.PORT || 3000, ()=> console.log("El servidor está corriendo"))
