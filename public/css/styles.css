@@ -34,9 +34,11 @@ main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebeb
     left: 83%;
     top: -20vh;
 }
-#logo-envio:hover{
+.descripcion:hover i{
     transform: rotate(-90deg);
-
+}
+#logo-envio:hover + #descripcion{
+    display:block;
 }
 #img-producto:hover + #descripcion{display: block;}
 #descripcion{display: none;box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white;}
