@@ -11,11 +11,15 @@ body{font-size: 12px;font-family: 'Roboto';margin: 0px;}
 ul{text-align: left; margin-right: 0px;}
 footer{text-align:center}
 main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebebeb; box-sizing: border-box;}
+
 .barra{min-width: 0;}
+.banner{width: 100vw;}
+
+
 #producto{display: flex; flex-wrap: wrap; flex-direction: column; margin-top: 10px;margin-bottom: 10px;}
 #compra-en-cuotas{text-align: center;}
 #iconos-footer{color:#1259c3;}
-#img{width: 100%; align-self: center;}
+#img-producto{width: 100%; align-self: center;}
 #logo-envio {
     color: #39b54a;
     display: block;
@@ -27,10 +31,15 @@ main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebeb
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    right: -70vw;
-    top: -5vh;
+    left: 83%;
+    top: -20vh;
 }
-#descripcion{box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white;}
+#logo-envio:hover{
+    transform: rotate(-90deg);
+
+}
+#img-producto:hover + #descripcion{display: block;}
+#descripcion{display: none;box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white;}
 #precio-descuento{display: flex;
     flex-direction: row;
     flex-wrap: wrap;
