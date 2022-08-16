@@ -11,11 +11,13 @@ body{font-size: 12px;font-family: 'Roboto';margin: 0px;}
 ul{text-align: left; margin-right: 0px;}
 footer{text-align:center}
 main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebebeb; box-sizing: border-box;}
-
+label{box-sizing: border-box; margin-top: 1%; font-size: 1.2rem; align-self:flex-start; font-weight: bolder;}
+button{box-sizing: border-box; margin: 5%;}
 .barra{min-width: 0;}
 .banner{width: 100vw;}
-
-
+.formulario{display: flex; flex-direction: column; flex-wrap: nowrap;}
+.label-option{position: relative; bottom: 2.3vh;box-sizing: border-box; margin-top: 1%; font-size: 1rem; align-self:flex-start; font-weight: bold;}
+.label-choice{box-sizing: border-box; margin-top: 1%; font-size: 1rem; align-self:flex-start; font-weight: bold;}
 .producto{display: flex; flex-wrap: wrap; flex-direction: column; margin-top: 10px;margin-bottom: 10px;}
 .compra-en-cuotas{text-align: center;}
 .iconos-footer{color:#1259c3;}
