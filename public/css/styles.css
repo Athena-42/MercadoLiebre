@@ -16,11 +16,11 @@ main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebeb
 .banner{width: 100vw;}
 
 
-#producto{display: flex; flex-wrap: wrap; flex-direction: column; margin-top: 10px;margin-bottom: 10px;}
-#compra-en-cuotas{text-align: center;}
-#iconos-footer{color:#1259c3;}
-#img-producto{width: 100%; align-self: center;}
-#logo-envio {
+.producto{display: flex; flex-wrap: wrap; flex-direction: column; margin-top: 10px;margin-bottom: 10px;}
+.compra-en-cuotas{text-align: center;}
+.iconos-footer{color:#1259c3;}
+.img-producto{width: 100%; align-self: center;}
+.logo-envio {
     color: #39b54a;
     display: block;
     font-size: 16px;
@@ -37,35 +37,35 @@ main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebeb
 .descripcion:hover i{
     transform: rotate(-90deg);
 }
-#logo-envio:hover + #descripcion{
+.logo-envio:hover + #descripcion{
     display:block;
 }
-#img-producto:hover + #descripcion{display: block;}
-#descripcion{display: none;box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white;}
-#precio-descuento{display: flex;
+.img-producto:hover + .descripcion{display: block;}
+.descripcion{display: none;box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white;}
+.precio-descuento{display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     top: -5vh;}
 .precio{font-size: 18px;font-family: 'Roboto'; font-weight: bold; flex-grow: 0.3;}
 .descuento{font-size: 16px;font-family: 'Roboto'; color: #39b54a; flex-grow: 0.7;}
-#nombre-producto{font-size: 16px;font-family: 'Roboto';}
+.nombre-producto{font-size: 16px;font-family: 'Roboto';}
 .burger-menu{width:4vw;margin-left:47vw;margin-right:47vw;color: white;text-align: center; background-color: #03264C;}
 input[type="text"] {
     width: inherit;
 }
-div#logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
+div.logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
 @media (max-width: 361px){
     /*Mobile view*/
-    #descripcion{ display: none;}
-    #navbar{display: none;}
-    #loginbar{display: none;}
-    #logo-search-bar{display: flex; flex-direction: row;}
+    .descripcion{ display: none;}
+    .navbar{display: none;}
+    .loginbar{display: none;}
+    .logo-search-bar{display: flex; flex-direction: row;}
     
-    #logo-mercado-liebre {
+    .logo-mercado-liebre {
         flex:0.5;
         flex-grow: 0.5;}
-    #search-bar{
+    .search-bar{
         box-sizing: border-box;
         padding: 10px;
         min-width: 0; width: 35vw; display:block; flex:0.5; flex-grow: 0.4;; border: none;}
@@ -74,14 +74,14 @@ div#logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
 
 @media (min-width: 361px) and (max-width: 768px){
     /*Tablet view*/
-    #logo-search-bar{width:67%;display: flex; flex-direction: row; justify-content: space-between
+    .logo-search-bar{width:67%;display: flex; flex-direction: row; justify-content: space-between
     }
     
-    #logo-mercado-liebre {
+    .logo-mercado-liebre {
         flex:0.33;
         flex-grow:0.5;
         align-self: center;}
-    #search-bar{
+    .search-bar{
         align-self: center;
         
         box-sizing: border-box;
@@ -89,32 +89,32 @@ div#logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
         min-width: 0; width: 100%; display:block; flex:0.3;; border: none;}
     i.fas.fa-search{align-self: center;flex: 0.04;display: block; box-sizing: border-box; padding:2%;}
     
-    #header-tablet{
+    .header-tablet{
         display: flex;flex:1;flex-direction: row; flex-wrap: nowrap; width: 100vw;}
     
-    #compra-en-cuotas{flex:0.33; flex-grow: 1; box-sizing: border-box; padding: 2vh;}
+    .compra-en-cuotas{flex:0.33; flex-grow: 1; box-sizing: border-box; padding: 2vh;}
    
     nav{display: flex;}
-    ul#navbar{
+    ul.navbar{
         align-self: flex-start;
         display: flex;
         justify-content: space-evenly;
         flex-grow: 0.4;}
-    div#filler-bar{flex-grow:0.2;}
-    ul#loginbar{
+    div.filler-bar{flex-grow:0.2;}
+    ul.loginbar{
         align-self: flex-end;
         display: flex;
         justify-content: space-evenly;
         flex-grow: 0.4;}
 
    
-    #ultima-visita{display: flex; flex-wrap: wrap;}
-    #ofertas{display: flex; flex-wrap: wrap;}
-    #producto{
+    .ultima-visita{display: flex; flex-wrap: wrap;}
+    .ofertas{display: flex; flex-wrap: wrap;}
+    .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45vw;
     }
-    #logo-envio{right: -35vw;}
+    .logo-envio{right: -35vw;}
     .burger-menu{display: none;}
 
 }
@@ -122,14 +122,14 @@ div#logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
 @media (min-width: 769px){
     /*Desktop view*/
     
-    #logo-search-bar{width:67%;display: flex; flex-direction: row; justify-content: space-between
+    .logo-search-bar{width:67%;display: flex; flex-direction: row; justify-content: space-between
     }
     
-    #logo-mercado-liebre {
+    .logo-mercado-liebre {
         flex:0.33;
         flex-grow:0.5;
         align-self: center;}
-    #search-bar{
+    .search-bar{
         align-self: center;
         
         box-sizing: border-box;
@@ -137,32 +137,32 @@ div#logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
         min-width: 0; width: 100%; display:block; flex:0.3;; border: none;}
     i.fas.fa-search{align-self: center;flex: 0.04;display: block; box-sizing: border-box; padding:2%;}
     
-    #header-tablet{
+    .header-tablet{
         display: flex;flex:1;flex-direction: row; flex-wrap: nowrap; width: 100vw;}
     
-    #compra-en-cuotas{flex:0.33; flex-grow: 1; box-sizing: border-box; padding: 2vh;}
+    .compra-en-cuotas{flex:0.33; flex-grow: 1; box-sizing: border-box; padding: 2vh;}
    
     nav{display: flex;}
-    ul#navbar{
+    ul.navbar{
         align-self: flex-start;
         display: flex;
         justify-content: space-evenly;
         flex-grow: 0.4;}
-    div#filler-bar{flex-grow:0.2;}
-    ul#loginbar{
+    div.filler-bar{flex-grow:0.2;}
+    ul.loginbar{
         align-self: flex-end;
         display: flex;
         justify-content: space-evenly;
         flex-grow: 0.4;}
 
  
-    #ultima-visita{display: flex; flex-wrap: wrap;}
-    #ofertas{display: flex; flex-wrap: wrap;}
-    #producto{
+    .ultima-visita{display: flex; flex-wrap: wrap;}
+    .ofertas{display: flex; flex-wrap: wrap;}
+    .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 22.5vw;
     }
-    #logo-envio{right: -14.5vw;}
+    .logo-envio{right: -14.5vw;}
     .burger-menu{display: none;}
 }
 /* Paleta de colores
