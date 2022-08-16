@@ -37,18 +37,31 @@ main{display: block; margin-left: 5vw;margin-right: 5vw; background-color: #ebeb
 .descripcion:hover i{
     transform: rotate(-90deg);
 }
-.logo-envio:hover + #descripcion{
-    display:block;
+
+.descripcion i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 83%;
+    bottom: 40%
 }
-.img-producto:hover + .descripcion{display: block;}
-.descripcion{display: none;box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white;}
+.producto:hover .descripcion{display:flex;}
+    
+.descripcion{display: none;box-sizing: border-box; padding: 15px;border-top: solid 1px #ebebeb;width: 100%; align-self: center;background-color: white; flex-direction: column;}
 .precio-descuento{display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     top: -5vh;}
-.precio{font-size: 18px;font-family: 'Roboto'; font-weight: bold; flex-grow: 0.3;}
-.descuento{font-size: 16px;font-family: 'Roboto'; color: #39b54a; flex-grow: 0.7;}
+.precio{padding-top: 2vh;font-size: 18px;font-family: 'Roboto'; font-weight: bold; flex-grow: 0.3;}
+.descuento{padding-top: 2vh;font-size: 16px;font-family: 'Roboto'; color: #39b54a; flex-grow: 0.7;}
 .nombre-producto{font-size: 16px;font-family: 'Roboto';}
 .burger-menu{width:4vw;margin-left:47vw;margin-right:47vw;color: white;text-align: center; background-color: #03264C;}
 input[type="text"] {
@@ -63,6 +76,7 @@ div.logo-mercado-liebre{box-sizing: border-box; padding: 1px;}
     .logo-search-bar{display: flex; flex-direction: row;}
     
     .logo-mercado-liebre {
+        align-self: center;
         flex:0.5;
         flex-grow: 0.5;}
     .search-bar{
